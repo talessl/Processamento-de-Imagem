@@ -263,7 +263,12 @@ for x in range(len(imagem)):
 objetos = procura_objetos(nova_img)
 #prints pedidos
 print('Quantidade de objetos:',objetos[0])
-print('Quantidade de buracos totais:', len(objetos[3]))
+#contando buracos
+qtd_buracos = 0
+for i in range(len(objetos[3])):
+    qtd_buracos += len(objetos[3][i])
+
+print('Quantidade de buracos totais:', qtd_buracos)
 print('Quantidade de buracos de cada objeto:')
 for i in range(len(objetos[2])):
     print('posição:',objetos[1][i], 'objeto',objetos[2][i][0],':',objetos[2][i][1])  
