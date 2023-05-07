@@ -273,4 +273,5 @@ print('Quantidade de buracos de cada objeto:')
 for i in range(len(objetos[2])):
     print('posição:',objetos[1][i], 'objeto',objetos[2][i][0],':',objetos[2][i][1])  
 print('Posição de cada buraco(em ordem dos objetos):',objetos[3])
+input()
 
